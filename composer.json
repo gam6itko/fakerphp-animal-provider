@@ -1,0 +1,32 @@
+{
+    "name": "gam6itko/fakerphp-animal-provider",
+    "type": "library",
+    "description": "Additional plugin for fakerphp/faker that allows you to generate a random animal",
+    "keywords": [
+        "faker"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gam6itko",
+            "email": "gam6itko@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "fakerphp/faker": "^1.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gam6itko\\Faker\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gam6itko\\Faker\\Test\\": "tests"
+        }
+    }
+}
