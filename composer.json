@@ -28,5 +28,10 @@
         "psr-4": {
             "Gam6itko\\Faker\\Test\\": "tests"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
     }
 }
