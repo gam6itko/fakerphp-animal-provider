@@ -14,8 +14,9 @@ composer req gam6itko/fakephp-animal-provider
 use Faker\Factory;
 use Gam6itko\Faker\Provider\Animal;
 
+$locale = 'en_US'
 $generator = Factory::create($locale);
-$generator->addProvider(new Animal($generator));
+\Gam6itko\Faker\ProviderFactory::addProvider($generator, 'Animal', $locale)
 
 echo $generator->animal() // 'cat'
 echo $generator->adjectiveAnimal() // 'curious cat'
